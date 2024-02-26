@@ -19,12 +19,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 env = environ.Env()
 environ.Env.read_env()
 
-CORS_ORIGIN_WHITELIST = [
-    'localhost:80',
-    'localhost:8000',
-    'localhost:5173',
-    '127.0.0.1:8000'
-]
+CORS_ORIGIN_WHITELIST = True
 
 
 # Quick-start development settings - unsuitable for production
