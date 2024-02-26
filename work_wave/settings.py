@@ -30,6 +30,7 @@ SECRET_KEY = 'django-insecure-fjnvpv)%*uo+3r_12_$(mrk%4fs6k1pizf^uc6rq81@))oy19n
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
+CSRF_TRUSTED_ORIGINS = ['https://work-wave-uk7b.onrender.com','https://*.127.0.0.1']
 
 
 # Application definition
