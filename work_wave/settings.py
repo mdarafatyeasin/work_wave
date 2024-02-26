@@ -19,6 +19,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 env = environ.Env()
 environ.Env.read_env()
 
+CORS_ALLOW_ALL_ORIGINS = True
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
@@ -38,6 +40,7 @@ CSRF_TRUSTED_ORIGINS = ['https://work-wave-uk7b.onrender.com','https://*.127.0.0
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
+    'corsheaders',
     'rest_framework',
     'rest_framework.authtoken',
     'django.contrib.contenttypes',
@@ -57,6 +60,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'work_wave.urls'
