@@ -19,9 +19,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 env = environ.Env()
 environ.Env.read_env()
 
-CORS_ORIGIN_WHITELIST = ["*"]
-
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
@@ -33,7 +30,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 CSRF_TRUSTED_ORIGINS = ['https://work-wave-uk7b.onrender.com','https://*.127.0.0.1']
-
+CORS_ORIGIN_WHITELIST = True
 
 # Application definition
 
