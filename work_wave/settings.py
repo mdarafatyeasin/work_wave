@@ -37,10 +37,6 @@ CSRF_TRUSTED_ORIGINS = ['https://work-wave-uk7b.onrender.com','https://*.127.0.0
 #     'http://localhost:5173',
 # ]
 
-CORS_ALLOWED_ORIGINS = [
-    "https://localhost:5173"
-]
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -130,6 +126,8 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
+
+CORS_ALLOW_ALL_ORIGINS = True
 
 
 # Static files (CSS, JavaScript, Images)
