@@ -30,7 +30,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 CSRF_TRUSTED_ORIGINS = ['https://work-wave-uk7b.onrender.com','https://*.127.0.0.1']
-CORS_ORIGIN_WHITELIST = True
+CORS_ORIGIN_WHITELIST = [
+    'https://work-wave-uk7b.onrender.com',
+    'https://*.127.0.0.1',
+    'http://localhost:5173/',
+]
 
 # Application definition
 
