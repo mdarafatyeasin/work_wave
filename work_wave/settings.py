@@ -38,7 +38,7 @@ CSRF_TRUSTED_ORIGINS = ['https://work-wave-uk7b.onrender.com','https://*.127.0.0
 # ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173"
+    "https://localhost:5173"
 ]
 
 # Application definition
